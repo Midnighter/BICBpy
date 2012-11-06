@@ -58,7 +58,7 @@ def read_record(filename):
     """
     Read a sequence from a file containing a single record.
     """
-    ext = os.splitext(filename)[1].lower()
+    ext = os.path.splitext(filename)[1].lower()
     if ext[1] == "f":
         frmt = "fasta"
     elif ext[1] == "g":
