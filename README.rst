@@ -1,12 +1,16 @@
 BICBpy - Bioinformatics and Computational Biology Tutorial with Python
+======================================================================
 
 :Authors:
-    Moritz Emanuel Beber, Nikolaus Sonnenschein, and Marc-Thorsten Hütt
+    Moritz Emanuel Beber
+    Marc-Thorsten Hütt
+    Nikolaus Sonnenschein
 :Institution:
     Jacobs University, Bremen, Germany
 
 
 Purpose:
+--------
 - Undergrad teaching
 - Python fundamentals and standard library (urllib2, pickle)
 - Biopython: Genomic sequences
@@ -14,6 +18,7 @@ Purpose:
 - Numpy and Scipy: Solving ODEs
 
 Tutorials:
+----------
 
 1. General introduction (using IPython + a Beamer)
     1.1 Python?
@@ -25,8 +30,8 @@ Tutorials:
         1.4.3 Functions
         1.4.4 Control structures
     1.5 Everything is an object ...
-        1.5.1 Introspection 
-        
+        1.5.1 Introspection
+
     1.6. Solve as many python riddles as you can (www.pythonchallenge.com)
 
 2. Working with sequences
@@ -50,10 +55,10 @@ Tutorials:
 
 4. ODEs
 
-                  
 Installation:
 
 Resources:
+----------
 
 Biopython documentation
 http://www.biopython.org/wiki/Documentation
