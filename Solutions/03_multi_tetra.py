@@ -79,7 +79,7 @@ def parallel_freq((seq, sub_sz)):
 if __name__ == '__main__':
     num_cpu = int(sys.argv[1])
     chunk_sz = int(sys.argv[2])
-    files = sorted(glob("Sessions/Data/03_Sequence_Classification/*"))
+    files = sorted(glob("../Sessions/Data/03_Sequence_Classification/*"))
     sequences = [str(read_record(filename).seq) for filename in files\
             if not "random" in filename]
     print("loaded sequences")
