@@ -89,5 +89,5 @@ if __name__ == '__main__':
                 "<sequence record: path> [sequence record 2] [...] "\
                 "<output: path>".format(sys.argv[0])
         sys.exit(2)
-    main(sys.argv[3:-2], sys.argv[-1], sys.argv[1], sys.argv[2])
+    main(sys.argv[3:-1], sys.argv[-1], sys.argv[1], sys.argv[2])
 
