@@ -80,17 +80,18 @@ if __name__ == '__main__':
     num_cpu = int(sys.argv[1])
     chunk_sz = int(sys.argv[2])
     files = sorted(glob("../Sessions/Data/03_Sequence_Classification/*"))
-    sequences = [str(read_record(filename).seq) for filename in files\
+    records = [read_record(filename) for filename in files\
             if not "random" in filename]
+    sequences = [str(rec.seq) for rec in records]
     print("loaded sequences")
     # linear approach
     setup = """
 from __main__ import sub_freq
 from __main__ import sequences
     """
-#    print "linear:",\
-#            min(timeit.repeat(stmt="[sub_freq(seq, 4) for seq in sequences]",
-#            setup=setup, repeat=3, number=10)), "s"
+    print "linear:",\
+            min(timeit.repeat(stmt="[sub_freq(seq, 4) for seq in sequences]",
+            setup=setup, repeat=3, number=10)), "s"
     # parallel approach
     pickle(MethodType, _pickle_method, _unpickle_method)
     pool = multiprocessing.Pool(num_cpu)
